@@ -4,7 +4,7 @@
   "description": "Trulia API library",
   "main": "index.js",
   "scripts": {
-    "test": "jshint . && NODE_ENV=test mocha -R spec --recursive test/*.spec.js",
+    "test": "jshint . && NODE_ENV=test mocha --recursive test/*.spec.js",
     "jshint": "jshint ."
   },
   "repository": {
@@ -24,15 +24,18 @@
   "homepage": "https://github.com/kmiyashiro/trulia-node",
   "devDependencies": {
     "chai": "^2.2.0",
+    "chai-as-promised": "^5.0.0",
     "jshint": "^2.7.0",
     "mocha": "^2.2.4",
-    "sinon": "^1.14.1"
+    "sinon": "^1.14.1",
+    "superagent-mock": "^1.0.0"
   },
   "dependencies": {
     "bluebird": "^2.9.24",
     "debug": "^2.1.3",
     "lodash": "^3.7.0",
     "superagent": "^1.2.0",
-    "superagent-bluebird-promise": "^2.0.2"
+    "superagent-bluebird-promise": "^2.0.2",
+    "xml2js": "^0.4.8"
   }
 }
